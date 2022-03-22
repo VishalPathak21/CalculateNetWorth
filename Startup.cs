@@ -89,7 +89,8 @@ namespace CalculateNetWorth9Microservice
             app.UseHttpsRedirection();
 
             app.UseRouting();
-           
+
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseAuthorization();
 
